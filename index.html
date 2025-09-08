@@ -139,7 +139,12 @@
         id="level-container"
         class="flex flex-wrap gap-5 my-[40px] justify-center"
       ></div>
-      <div class="text-center py-[64px] bg-[#f8f8f8]">
+    </section>
+    <section
+      id="word-container"
+      class="bg-gray-100 p-10 container mx-auto my-10 grid grid-cols-2 md:grid-cols-3 gap-5"
+    >
+      <div class="text-center py-[64px] col-span-full">
         <h3 class="text-[14px] text-gray-500">
           <span class="font-bangla">আপনি এখনো কোন</span> Lesson Select
           <span class="font-bangla">করেন ন</span>
@@ -150,10 +155,20 @@
         </h1>
       </div>
     </section>
-    <section
-      id="word-container"
-      class="bg-gray-100 p-10 container mx-auto my-10 grid grid-cols-3 gap-5"
-    ></section>
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <h3 class="text-lg font-bold">Hello!</h3>
+        <p class="py-4">Press ESC key or click the button below to close</p>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
     <script src="/js/index.js"></script>
   </body>
 </html>
